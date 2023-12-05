@@ -7,7 +7,7 @@ from torchvision.models import resnet34
 import torch.nn.functional as F
 import tifffile
 
-import numpy as np  # Add this import statement
+import numpy as np
 
 # Define the transformation to apply to input images
 transform = transforms.Compose([
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     # Load the pre-trained ResNet34 model
     model_path = "resnet34--epoch=16-val_acc=0.71-val_loss=0.63.ckpt"
     model = resnet34(pretrained=False)
-    model.fc = torch.nn.Linear(512, 2)  # Assuming your model has 2 output classes (0 and 1)
+    model.fc = torch.nn.Linear(512, 2)  # Assuming model has 2 output classes (0 and 1)
 
     # Print keys of the loaded state_dict
     loaded_state_dict = torch.load(model_path, map_location=torch.device('cpu'))
