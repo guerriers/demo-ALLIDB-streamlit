@@ -1,5 +1,5 @@
 # Demo-ALLIDB-streamlit
-:raising_hand::raising_hand: This is a demo app using Streamlit to predict with the ALLIDB (Acute Lymphoblastic Leukemia Image Database)
+:raising_hand::raising_hand: Visit [demo-allidb.streamlit.app](https://demo-allidb.streamlit.app/) to explore a demo app, This is a demo app using Streamlit to predict with the ALLIDB (Acute Lymphoblastic Leukemia Image Database)
 
 ## Installation
 
